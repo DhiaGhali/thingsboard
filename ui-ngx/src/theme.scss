@@ -21,6 +21,41 @@
 @include mat.all-component-typographies();
 @include mat.core();
 
+
+$tb-hexilia: (
+  50: #E9F6E4,
+  100: #C7E8BA,
+  200: #A3D98E,
+  300: #7FCA63,
+  400: #61BE41,
+  500: $tb-primary-color,
+  600: $tb-secondary-color,
+  700: #277803,
+  800: #1F6402,
+  900: #144702,
+  A100: $tb-hue3-color,
+  A200: #73FF4F,
+  A400: #3EFF19,
+  A700: #2DDB12,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+
 $tb-mat-indigo: (
   50: #e8eaf6,
   100: #c5cae9,
