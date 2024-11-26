@@ -1,0 +1,1 @@
+import{f,j as o}from"./chunk-NZGOIL2E.js";var p=f((t,e)=>{o();(function(){ace.require(["ace/snippets/protobuf"],function(c){typeof e=="object"&&typeof t=="object"&&e&&(e.exports=c)})})()});export default p();

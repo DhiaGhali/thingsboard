@@ -1,0 +1,36 @@
+import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import { RafService } from '@core/services/raf.service';
+import * as i0 from "@angular/core";
+export declare class MarkdownEditorComponent implements OnInit, ControlValueAccessor, OnDestroy {
+    private cd;
+    private raf;
+    label: string;
+    disabled: boolean;
+    readonly: boolean;
+    helpId: string;
+    required: boolean;
+    markdownEditorElmRef: ElementRef;
+    editorMode: boolean;
+    fullscreen: boolean;
+    markdownValue: string;
+    renderValue: string;
+    private markdownEditor;
+    private ignoreChange;
+    private editorResize$;
+    private editorsResizeCaf;
+    private propagateChange;
+    constructor(cd: ChangeDetectorRef, raf: RafService);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState(isDisabled: boolean): void;
+    writeValue(value: string): void;
+    onFullscreen(): void;
+    toggleEditMode(): void;
+    private updateView;
+    private onAceEditorResize;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MarkdownEditorComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<MarkdownEditorComponent, "tb-markdown-editor", never, { "label": { "alias": "label"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; "readonly": { "alias": "readonly"; "required": false; }; "helpId": { "alias": "helpId"; "required": false; }; "required": { "alias": "required"; "required": false; }; }, {}, never, never, false, never>;
+}
