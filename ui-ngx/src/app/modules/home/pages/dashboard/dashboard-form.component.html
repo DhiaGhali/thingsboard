@@ -85,12 +85,6 @@
   </mat-form-field>
   <div class="flex flex-col" [class.!hidden]="isEdit || !(dashboardScope === 'tenant' && isPublic(entity)
                                 || dashboardScope === 'customer' && isCurrentPublicCustomer(entity))">
-    <tb-social-share-panel style="padding-bottom: 1.25em;"
-                           shareTitle="{{ 'dashboard.socialshare-title' | translate:{dashboardTitle: entity?.title} }}"
-                           shareText="{{ 'dashboard.socialshare-text' | translate:{dashboardTitle: entity?.title} }}"
-                           shareLink="{{ publicLink }}"
-                           shareHashTags="thingsboard, iot">
-    </tb-social-share-panel>
     <div class="flex flex-row">
       <mat-form-field class="mat-block flex-1">
         <mat-label translate>dashboard.public-link</mat-label>
